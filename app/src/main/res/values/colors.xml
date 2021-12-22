@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_background">#F2F7F8</color>
+    <color name="text_default">#313C44</color>
+    <color name="text_default_disabled">#40313C44</color>
+    <color name="text_default_enhanced">#6278FF</color>
+    <color name="divider_line">#313C44</color>
+    <color name="navigator">#2E4FFF</color>
+    <color name="action_button">#9FBFBE</color>
+    <color name="shadow">#f0808080</color>
+    <color name="input_frame">#313C44</color>
+    <color name="checkbox_mark">#9FBFBE</color>
+    <color name="tag_deep">#B6D1D0</color>
+    <color name="tag_pale">#D9E7E6</color>
+    <color name="master_file_name">#FF8C00</color>
+</resources>

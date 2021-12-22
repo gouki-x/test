@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">SP1 DemoSDK</string>
+    <!-- Contents -->
+    <string name="rapid_read">RapidRead</string>
+    <string name="inventory">Inventory</string>
+    <string name="barcode">Barcode</string>
+    <string name="settings">Settings</string>
+    <string name="tansaku">資産探索</string>
+    <string name="locate_tag">LocateTag</string>
+    <string name="pre_filters">PreFilters</string>
+    <string name="waiting_for_connection">接続待ち・・・</string>
+    <string name="connection_error">接続エラー</string>
+    <string name="compare_master">Compare\nMaster</string>
+    <!-- Inventory activity -->
+    <string name="total_tags">読取枚数</string>
+    <!-- Settings activity -->
+    <string name="scanner_version">Scanner version</string>
+    <string name="read_power_level">Read系出力</string>
+    <string name="session">Session</string>
+    <string name="session_init">Session Init</string>
+    <string name="report_unique_tags">二度読み防止</string>
+    <string name="channel">Channel</string>
+    <string name="channel1">ch1</string>
+    <string name="channel2">ch2</string>
+    <string name="channel3">ch3</string>
+    <string name="channel4">ch4</string>
+    <string name="channel5">ch5</string>
+    <string name="channel7">ch7</string>
+    <string name="channel10">ch10</string>
+    <string name="channel11">ch11</string>
+    <string name="channel13">ch13</string>
+    <string name="channel17">ch17</string>
+    <string name="channel23">ch23</string>
+    <string name="channel24">ch24</string>
+    <string name="channel25">ch25</string>
+    <string name="q_factor">Q値</string>
+    <string name="link_profile">Link Profile</string>
+    <string name="polarization">偏波設定</string>
+    <string name="power_save">RFID省電力設定</string>
+    <string name="buzzer">ブザー鳴動 ON/OFF</string>
+    <string name="buzzer_volume">ブザー音量</string>
+    <string name="barcode_uppercase">BARCODE</string>
+    <string name="trigger_mode">トリガーモード</string>
+    <string name="enable_all_1d_codes">1次元コード読取許可</string>
+    <string name="enable_all_2d_codes">2次元コード読取許可</string>
+    <string name="session_s0">S0</string>
+    <string name="session_s1">S1</string>
+    <string name="session_s2">S2</string>
+    <string name="session_s3">S3</string>
+    <string name="link_profile_1">1</string>
+    <string name="link_profile_2">2</string>
+    <string name="link_profile_4">4</string>
+    <string name="link_profile_5">5</string>
+    <string name="polarization_vertical">垂直</string>
+    <string name="polarization_horizontal">水平</string>
+    <string name="polarization_both">両方</string>
+    <string name="buzzer_volume_low">小</string>
+    <string name="buzzer_volume_middle">中</string>
+    <string name="buzzer_volume_loud">大</string>
+    <string name="trigger_mode_auto_off">オートオフ</string>
+    <string name="trigger_mode_momentary">モメンタリ</string>
+    <string name="trigger_mode_alternate">オルタネート</string>
+    <string name="trigger_mode_continuous">連続読取モード</string>
+    <string name="trigger_mode_trigger_release">トリガーリリースモード</string>
+    <string name="rfid_uppercase">RFID</string>
+    <string name="rfid_trigger_mode_continuous1">連続読取モード1</string>
+    <string name="rfid_trigger_mode_continuous2">連続読取モード2</string>
+    <!-- RapidRead activity -->
+    <string name="read_tag_head">読取タグ&#058;</string>
+    <string name="pcs">枚</string>
+    <string name="time_00_00_00">00&#058;00&#058;00</string>
+    <string name="tags_per_second_unit">枚&#047;秒</string>
+    <!-- LocateTag activity -->
+    <string name="read">Read</string>
+    <string name="uii">UII</string>
+    <string name="forward_match">Forward Match</string>
+    <string name="backward_match">Bkward Match</string>
+    <string name="search">Search</string>
+    <string name="session_on_search">@string/session_s0</string>
+    <!-- PreFilters activity -->
+    <string name="bank">Bank</string>
+    <string name="offset_bit">Offset(bit)</string>
+    <string name="pattern">Pattern</string>
+    <string name="bank_uii">UII</string>
+    <string name="bank_tid">TID</string>
+    <string name="bank_user">USER</string>
+    <string name="set">Set</string>
+    <string name="load">Load</string>
+    <!-- Utility -->
+    <string name="navigate_up">&lt; TOP</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="clear">Clear</string>
+    <string name="number_0">0</string>
+    <string name="number_0_0">0.0</string>
+    <string name="number_0_00">0.00</string>
+    <string name="read_power_level_unit">dBm</string>
+    <string name="sample_text">ABCDEFGHIJKLMNOPQRSTUVWX</string>
+    <string name="app_version_format">Ver%1$s</string>
+    <string name="app_version_unset">Ver0&#46;00</string>
+    <string name="file_output">File output</string>
+    <string name="select_master">Select Master</string>
+    <string name="result_output">Result output</string>
+    <!-- Compare Master activity -->
+    <string name="implement_title">実績</string>
+    <string name="slash">/</string>
+    <string name="stock_title">在庫</string>
+    <string name="square_open">[</string>
+    <string name="square_close">]</string>
+    <string name="out_of_book">簿外</string>
+    <string name="outer_list">簿外リスト</string>
+    <!-- Array -->
+    <string-array name="strings_session">
+        <item>@string/session_s0</item>
+        <item>@string/session_s1</item>
+        <item>@string/session_s2</item>
+        <item>@string/session_s3</item>
+    </string-array>
+    <string-array name="strings_link_profile">
+        <item>@string/link_profile_1</item>
+        <item>@string/link_profile_2</item>
+        <item>@string/link_profile_4</item>
+        <item>@string/link_profile_5</item>
+    </string-array>
+    <string-array name="strings_polarization">
+        <item>@string/polarization_vertical</item>
+        <item>@string/polarization_horizontal</item>
+        <item>@string/polarization_both</item>
+    </string-array>
+    <string-array name="strings_buzzer_volume">
+        <item>@string/buzzer_volume_low</item>
+        <item>@string/buzzer_volume_middle</item>
+        <item>@string/buzzer_volume_loud</item>
+    </string-array>
+    <string-array name="strings_rfid_trigger_mode">
+        <item>@string/trigger_mode_auto_off</item>
+        <item>@string/trigger_mode_momentary</item>
+        <item>@string/trigger_mode_alternate</item>
+        <item>@string/rfid_trigger_mode_continuous1</item>
+        <item>@string/rfid_trigger_mode_continuous2</item>
+    </string-array>
+    <string-array name="strings_trigger_mode">
+        <item>@string/trigger_mode_auto_off</item>
+        <item>@string/trigger_mode_momentary</item>
+        <item>@string/trigger_mode_alternate</item>
+        <item>@string/trigger_mode_continuous</item>
+        <item>@string/trigger_mode_trigger_release</item>
+    </string-array>
+    <string-array name="strings_bank">
+        <item>@string/bank_uii</item>
+        <item>@string/bank_tid</item>
+        <item>@string/bank_user</item>
+    </string-array>
+    <!-- Description -->
+    <string name="image_desc_inventory">Inventory</string>
+    <string name="image_desc_rapid_read">Rapid read</string>
+    <string name="image_desc_barcode">Barcode</string>
+    <string name="image_desc_settings">Settings</string>
+    <string name="image_desc_locate_tag">Locate tag</string>
+    <string name="image_desc_pre_filters">Pre filters</string>
+    <string name="image_desc_battery">Battery</string>
+    <string name="image_desc_tag_radar">Tag radar</string>
+    <string name="image_desc_tag_circle">Tag circle</string>
+    <!-- Fragment -->
+    <string name="fragment_anonymous">fragment_anonymous</string>
+    <!-- System message -->
+    <string name="E_MSG_NO_CONNECTION">SP1が接続されていません</string>
+    <string name="E_MSG_COMMUNICATION">SP1との通信に失敗しました</string>
+    <string name="E_MSG_SAVE_SETTINGS">設定に失敗しました</string>
+    <string name="I_MSG_PROGRESS_SETTING">設定を反映中の為、しばらくお待ちください</string>
+    <string name="I_MSG_SAVE_SETTINGS">設定値が保存されました</string>
+    <string name="E_MSG_SET_FILTER">フィルター設定に失敗しました</string>
+    <string name="I_MSG_SET_FILTER">フィルター設定しました</string>
+    <string name="I_MSG_CLEAR_FILTER">フィルター設定をクリアしました</string>
+    <string name="E_MSG_FILTER_OUT_OF_RANGE_OFFSET">オフセット値は0から524287まで設定できます</string>
+    <string name="E_MSG_FILTER_OUT_OF_RANGE_PATTERN">パターンは256bitまで入力可能です</string>
+    <string name="E_MSG_FILTER_INVALID_PATTERN">パターンは16進数で入力してください</string>
+    <string name="E_MSG_VERSION_SP1">SP1 OS Ver%1$s\nVer1.02以降のOSに更新してください。このアプリが正常に動作しない可能性があります。</string>
+    <string name="E_MSG_NOT_DATA_TO_OUTPUT">リストUIIは空です。</string>
+    <string name="E_MSG_FILE_OUTPUT_COMPLETE">SP1Sampleフォルダへファイル出力が完了しました。</string>
+    <string name="E_MSG_FILE_OUTPUT_INCOMPLETE">SP1Sampleフォルダへファイル出力が不完全です。</string>
+    <string name="MSG_ENABLE_PERMISSION">この機能を使用するには、アクセスバーミッションを有効にする必要があります。</string>
+    <string name="MSG_PLS_SELECT_MASTER">ファイルマスタを選択してください。</string>
+    <string name="MSG_CHANGE_SELECT_MASTER">ファイルマスタを変更しますか？</string>
+    <string name="MSG_SAVE_FILE_OUTPUT">ファイル出力名は%1$sです。\nファイルはSP1Sampleフォルダに保存されます。</string>
+    <string name="MSG_INPUT_FILE_NAME">ファイル名を入力してください。</string>
+    <!-- Compare Master -->
+    <string name="compare_master_title">Compare Master</string>
+
+    <string name="E_MSG_NOT_HEXADECIMAL">指定できる値は16進数でなければいけません。</string>
+    <string name="E_MSG_OVER_FLOW_BIT">指定できる値は %d bitまでです。</string>
+    <string name="I_READ_UNSPECIFIED_UII">指定UII以外をRead。</string>
+</resources>

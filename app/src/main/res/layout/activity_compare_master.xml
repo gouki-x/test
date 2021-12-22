@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompareMasterActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/button_navigate_up"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:onClick="onClick"
+            android:text="@string/navigate_up"
+            android:textColor="@color/navigator"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_title_compare_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compare_master_title"
+            android:textColor="@color/text_default"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/button_navigate_up"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayoutFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_compare_master">
+            <TextView
+                android:id="@+id/text_master_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master_file_name"
+                android:textColor="@color/master_file_name"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ConstraintLayoutFileName">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="3"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/implement_title"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="0"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="0"
+                    android:layout_column="2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_title"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="10dp"
+                    android:layout_row="0"
+                    android:layout_column="3"/>
+
+                <TextView
+                    android:id="@+id/text_implement_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="1"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="1"
+                    android:layout_column="2"/>
+
+                <TextView
+                    android:id="@+id/text_stock_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="10dp"
+                    android:layout_row="1"
+                    android:layout_column="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/square_open"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="2"
+                    android:layout_column="0"/>
+
+                <TextView
+                    android:id="@+id/text_implement_not_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="2"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slash"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="2"
+                    android:layout_column="2"/>
+
+                <TextView
+                    android:id="@+id/text_out_of_the_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/out_of_book"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="10dp"
+                    android:layout_row="2"
+                    android:layout_column="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/square_close"
+                    android:textSize="22sp"
+                    android:textColor="@color/text_default"
+                    android:layout_marginEnd="30dp"
+                    android:layout_row="2"
+                    android:layout_column="4"/>
+
+            </GridLayout>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayoutListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ConstraintLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outer_list"
+                android:textColor="@color/text_default"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_tag_not_matched_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:background="@android:color/white"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/ConstraintLayoutListTitle"
+            android:layout_above="@+id/LinearLayoutButtonControl">
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/LinearLayoutButtonControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_read_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/start"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/button_clear_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/button_clear_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/clear"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/button_select_master_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/button_select_master_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/select_master"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/button_result_output_toggle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/button_result_output_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/result_output"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

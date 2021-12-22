@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryActivity2">
+
+    <RelativeLayout
+        android:id="@+id/inventory2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tansaku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/button_navigate_up"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            android:gravity="center|start"
+            android:onClick="onClick"
+            android:text="@string/navigate_up"
+            android:textColor="@color/navigator"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ConstraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_navigate_up">
+
+            <TextView
+                android:id="@+id/text_total_tags_value"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/number_0"
+                android:textColor="@color/text_default"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/text_total_shisan_value"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_total_shisan_value"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/number_0"
+                android:textColor="@color/text_default"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_title_inventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="資産調査"
+                android:textColor="@color/text_default"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="5dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ConstraintLayout1">
+
+
+            <Button
+                android:id="@+id/button_read_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/start"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/button_clear_toggle"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button_clear_toggle"
+                style="@style/NoTextCapsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="onClick"
+                android:text="@string/clear"
+                android:textColor="@color/text_default"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_read_toggle" />
+
+            <Button
+                android:id="@+id/csv_read"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/text_default"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button_clear_toggle"
+                android:text="@string/csv_read" />
+
+            <Button
+                android:id="@+id/csv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/action_button"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/text_default"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="@string/csv_save" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tansaku"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventory2"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ListView
+            android:id="@+id/tansakuListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

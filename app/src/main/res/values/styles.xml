@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/app_background</item>
+    </style>
+
+    <style name="NoTextCapsButton" parent="Base.Widget.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CheckBox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/input_frame</item>
+        <item name="colorControlActivated">@color/checkbox_mark</item>
+    </style>
+
+</resources>

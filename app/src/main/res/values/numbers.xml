@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="locate_tag_initialize_time">1500</integer>
+    <integer name="read_power_level_min">4</integer>
+    <integer name="read_power_level_max">30</integer>
+    <integer name="read_power_level_default">24</integer>
+    <integer name="q_factor_min">0</integer>
+    <integer name="q_factor_max">7</integer>
+    <integer name="q_factor_default">4</integer>
+    <integer name="read_power_level_on_search_tag">20</integer>
+    <integer name="beep_sampling_rate_hz">44100</integer>
+    <integer name="beep_repeat_count">255</integer>
+    <integer name="stage2_max_read_power_level_on_search">-36</integer>
+    <integer name="stage3_max_read_power_level_on_search">-49</integer>
+    <integer name="stage4_max_read_power_level_on_search">-63</integer>
+    <integer name="stage5_max_read_power_level_on_search">-75</integer>
+    <item name="beep_volume" type="dimen" format="float">1.0</item>
+    <item name="button_read_toggle_letter_spacing" type="dimen" format="float">0.1</item>
+    <integer-array name="beep_frequencies_hz">
+        <item>2793</item>
+        <item>1396</item>
+        <item>1396</item>
+        <item>698</item>
+        <item>349</item>
+    </integer-array>
+    <integer-array name="beep_sound_durations_ms">
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+    </integer-array>
+    <integer-array name="beep_silent_durations_ms">
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>700</item>
+        <item>900</item>
+    </integer-array>
+    <integer-array name="locate_tag_read_power_levels">
+        <item>4</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </integer-array>
+</resources>
